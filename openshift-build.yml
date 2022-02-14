@@ -19,5 +19,8 @@ items:
     strategy:
       type: Docker
       dockerStrategy:
-        # Find the image build instructions in ./Dockerfile
-        dockerfilePath: Dockerfile
+        pullSecret:
+          name: docker
+        dockerfilePath: Dockerfile      
+          # Find the image build instructions in ./Dockerfile
+          dockerfilePath: Dockerfile
